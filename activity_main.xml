@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product"
+        android:hint="Enter product"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/cost"
+        android:hint="Enter cost"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:onClick="onClick"
+        android:text="Add product"/>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shop_list"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="57dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/result"/>
+
+</LinearLayout>
